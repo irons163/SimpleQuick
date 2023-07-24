@@ -3,8 +3,7 @@
 //  SimpleQuick
 //
 //  Created by Phil Chang on 2023/7/24.
-//  Copyright © 2023 Yahoo. All rights reserved.
-//        
+//
 
 #import <Foundation/Foundation.h>
 

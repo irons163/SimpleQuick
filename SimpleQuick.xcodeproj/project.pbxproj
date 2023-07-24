@@ -11,6 +11,20 @@
 		D1AA67A02A6E7BE10069DD7F /* SimpleQuick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AA67952A6E7BE10069DD7F /* SimpleQuick.framework */; };
 		D1AA67A52A6E7BE10069DD7F /* SimpleQuickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67A42A6E7BE10069DD7F /* SimpleQuickTests.swift */; };
 		D1AA67A62A6E7BE10069DD7F /* SimpleQuick.h in Headers */ = {isa = PBXBuildFile; fileRef = D1AA67982A6E7BE10069DD7F /* SimpleQuick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AA67B02A6E7C970069DD7F /* FunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67AF2A6E7C960069DD7F /* FunctionalTests.swift */; };
+		D1AA67F02A6E7CCF0069DD7F /* ExampleGroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67ED2A6E7CCF0069DD7F /* ExampleGroupTests.swift */; };
+		D1AA67F12A6E7CCF0069DD7F /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67EE2A6E7CCF0069DD7F /* ExampleGroup.swift */; };
+		D1AA67F22A6E7CCF0069DD7F /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67EF2A6E7CCF0069DD7F /* Example.swift */; };
+		D1AA67FD2A6E7CE50069DD7F /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67F42A6E7CE50069DD7F /* Expectation.swift */; };
+		D1AA67FE2A6E7CE50069DD7F /* BeTrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67F62A6E7CE50069DD7F /* BeTrue.swift */; };
+		D1AA67FF2A6E7CE50069DD7F /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67F72A6E7CE50069DD7F /* Equal.swift */; };
+		D1AA68002A6E7CE50069DD7F /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67F82A6E7CE50069DD7F /* Matcher.swift */; };
+		D1AA68012A6E7CE50069DD7F /* RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67F92A6E7CE50069DD7F /* RegularExpression.swift */; };
+		D1AA68022A6E7CE50069DD7F /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67FA2A6E7CE50069DD7F /* Contain.swift */; };
+		D1AA68032A6E7CE50069DD7F /* AsynchronousExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67FB2A6E7CE50069DD7F /* AsynchronousExpectation.swift */; };
+		D1AA68042A6E7CE50069DD7F /* Actual.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA67FC2A6E7CE50069DD7F /* Actual.swift */; };
+		D1AA68082A6E7CF40069DD7F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA68062A6E7CF40069DD7F /* Person.swift */; };
+		D1AA68092A6E7CF40069DD7F /* Poet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA68072A6E7CF40069DD7F /* Poet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +43,20 @@
 		D1AA67992A6E7BE10069DD7F /* SimpleQuick.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SimpleQuick.docc; sourceTree = "<group>"; };
 		D1AA679F2A6E7BE10069DD7F /* SimpleQuickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleQuickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AA67A42A6E7BE10069DD7F /* SimpleQuickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleQuickTests.swift; sourceTree = "<group>"; };
+		D1AA67AF2A6E7C960069DD7F /* FunctionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalTests.swift; sourceTree = "<group>"; };
+		D1AA67ED2A6E7CCF0069DD7F /* ExampleGroupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleGroupTests.swift; sourceTree = "<group>"; };
+		D1AA67EE2A6E7CCF0069DD7F /* ExampleGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleGroup.swift; sourceTree = "<group>"; };
+		D1AA67EF2A6E7CCF0069DD7F /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		D1AA67F42A6E7CE50069DD7F /* Expectation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
+		D1AA67F62A6E7CE50069DD7F /* BeTrue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeTrue.swift; sourceTree = "<group>"; };
+		D1AA67F72A6E7CE50069DD7F /* Equal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equal.swift; sourceTree = "<group>"; };
+		D1AA67F82A6E7CE50069DD7F /* Matcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matcher.swift; sourceTree = "<group>"; };
+		D1AA67F92A6E7CE50069DD7F /* RegularExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpression.swift; sourceTree = "<group>"; };
+		D1AA67FA2A6E7CE50069DD7F /* Contain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contain.swift; sourceTree = "<group>"; };
+		D1AA67FB2A6E7CE50069DD7F /* AsynchronousExpectation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousExpectation.swift; sourceTree = "<group>"; };
+		D1AA67FC2A6E7CE50069DD7F /* Actual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actual.swift; sourceTree = "<group>"; };
+		D1AA68062A6E7CF40069DD7F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D1AA68072A6E7CF40069DD7F /* Poet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +109,46 @@
 			isa = PBXGroup;
 			children = (
 				D1AA67A42A6E7BE10069DD7F /* SimpleQuickTests.swift */,
+				D1AA67AF2A6E7C960069DD7F /* FunctionalTests.swift */,
+				D1AA67ED2A6E7CCF0069DD7F /* ExampleGroupTests.swift */,
+				D1AA67EF2A6E7CCF0069DD7F /* Example.swift */,
+				D1AA67EE2A6E7CCF0069DD7F /* ExampleGroup.swift */,
+				D1AA67F32A6E7CE50069DD7F /* Expectation */,
+				D1AA68052A6E7CF40069DD7F /* Data */,
 			);
 			path = SimpleQuickTests;
+			sourceTree = "<group>";
+		};
+		D1AA67F32A6E7CE50069DD7F /* Expectation */ = {
+			isa = PBXGroup;
+			children = (
+				D1AA67F42A6E7CE50069DD7F /* Expectation.swift */,
+				D1AA67FB2A6E7CE50069DD7F /* AsynchronousExpectation.swift */,
+				D1AA67FC2A6E7CE50069DD7F /* Actual.swift */,
+				D1AA67F52A6E7CE50069DD7F /* Matcher */,
+			);
+			path = Expectation;
+			sourceTree = "<group>";
+		};
+		D1AA67F52A6E7CE50069DD7F /* Matcher */ = {
+			isa = PBXGroup;
+			children = (
+				D1AA67F62A6E7CE50069DD7F /* BeTrue.swift */,
+				D1AA67F72A6E7CE50069DD7F /* Equal.swift */,
+				D1AA67F82A6E7CE50069DD7F /* Matcher.swift */,
+				D1AA67F92A6E7CE50069DD7F /* RegularExpression.swift */,
+				D1AA67FA2A6E7CE50069DD7F /* Contain.swift */,
+			);
+			path = Matcher;
+			sourceTree = "<group>";
+		};
+		D1AA68052A6E7CF40069DD7F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D1AA68062A6E7CF40069DD7F /* Person.swift */,
+				D1AA68072A6E7CF40069DD7F /* Poet.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +268,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1AA68032A6E7CE50069DD7F /* AsynchronousExpectation.swift in Sources */,
+				D1AA68012A6E7CE50069DD7F /* RegularExpression.swift in Sources */,
+				D1AA68042A6E7CE50069DD7F /* Actual.swift in Sources */,
+				D1AA67B02A6E7C970069DD7F /* FunctionalTests.swift in Sources */,
+				D1AA68082A6E7CF40069DD7F /* Person.swift in Sources */,
 				D1AA67A52A6E7BE10069DD7F /* SimpleQuickTests.swift in Sources */,
+				D1AA67F12A6E7CCF0069DD7F /* ExampleGroup.swift in Sources */,
+				D1AA67F02A6E7CCF0069DD7F /* ExampleGroupTests.swift in Sources */,
+				D1AA67FD2A6E7CE50069DD7F /* Expectation.swift in Sources */,
+				D1AA68022A6E7CE50069DD7F /* Contain.swift in Sources */,
+				D1AA68092A6E7CF40069DD7F /* Poet.swift in Sources */,
+				D1AA67F22A6E7CCF0069DD7F /* Example.swift in Sources */,
+				D1AA67FF2A6E7CE50069DD7F /* Equal.swift in Sources */,
+				D1AA68002A6E7CE50069DD7F /* Matcher.swift in Sources */,
+				D1AA67FE2A6E7CE50069DD7F /* BeTrue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
