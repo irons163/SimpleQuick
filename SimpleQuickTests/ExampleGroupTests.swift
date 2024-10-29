@@ -6,32 +6,33 @@
 //
 
 import XCTest
+import SimpleQuick
 
 func testExampleGroups() {
-    var root = ExampleGroup("Person")
+    let root = ExampleGroup("Person")
 
     var person: Person?
     root.localBefores.append() {
         person = Person()
     }
 
-    var itIsHappy = Example("is happy") {
+    let itIsHappy = Example("is happy") {
         XCTAssert(person!.isHappy, "expected person to be happy by default")
     }
     root.appendExample(example: itIsHappy)
 
-    var whenUnhappy = ExampleGroup("when the person is unhappy")
+    let whenUnhappy = ExampleGroup("when the person is unhappy")
     whenUnhappy.localBefores.append() {
         person!.isHappy = false
     }
-    var itGreetsHalfheartedly = Example("greets halfheartedly") {
+    let itGreetsHalfheartedly = Example("greets halfheartedly") {
         XCTAssertEqual(person!.greeting, "Oh, hi.", "expected a halfhearted greeting")
     }
     whenUnhappy.appendExample(example: itGreetsHalfheartedly)
     root.appendExampleGroup(group: whenUnhappy)
 
-    var whenHappy = ExampleGroup("when the person is happy")
-    var itGreetsEnthusiastically = Example("greets enthusiastically") {
+    let whenHappy = ExampleGroup("when the person is happy")
+    let itGreetsEnthusiastically = Example("greets enthusiastically") {
         XCTAssertEqual(person!.greeting, "Hello!", "expected an enthusiastic greeting")
     }
     whenHappy.appendExample(example: itGreetsEnthusiastically)

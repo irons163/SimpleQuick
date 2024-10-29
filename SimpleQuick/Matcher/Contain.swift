@@ -28,7 +28,7 @@ class Contain: Matcher {
 }
 
 extension Expectation {
-    func contain(_ expected: any Equatable) {
+    public func contain(_ expected: any Equatable) {
         evaluate(Contain(expected))
     }
 }

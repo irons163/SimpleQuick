@@ -25,13 +25,15 @@ class BeTrue: Matcher {
 }
 
 extension Expectation {
-    func beTrue() {
+    @discardableResult
+    public func beTrue() -> Self {
         evaluate(BeTrue(true))
+        return self
     }
 }
 
 extension AsynchronousExpectation {
-    func beTrue() {
+    public func beTrue() {
         evaluate(BeTrue(true))
     }
 }

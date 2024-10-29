@@ -6,18 +6,18 @@
 //
 
 import Foundation
-import XCTest
+//import XCTest
 
-class AsynchronousExpectation {
+public class AsynchronousExpectation {
     let timeOut: TimeInterval = 1.0
     let actualClosure: () -> (any Equatable)
     let negative: Bool
-    init(_ actualClosure: @escaping () -> any Equatable, negative: Bool) {
+    public init(_ actualClosure: @escaping () -> any Equatable, negative: Bool) {
         self.actualClosure = actualClosure
         self.negative = negative
     }
 
-    func evaluate(_ matcher: Matcher) {
+    public func evaluate(_ matcher: Matcher) {
         let expirationDate = Date(timeIntervalSinceNow: timeOut)
         while (true) {
             let expired = Date().compare(expirationDate) != ComparisonResult.orderedAscending
@@ -43,7 +43,9 @@ class AsynchronousExpectation {
     func _shouldEndPositiveWait(_ expired: Bool, _ matched: Bool, _ failureMessage: String) -> Bool {
         if matched || expired {
             if !matched {
-                XCTFail(failureMessage)
+//                XCTFail(failureMessage)
+                NSException(name: NSExceptionName.internalInconsistencyException,
+                    reason: "Subclasses must override this method", userInfo: nil).raise()
             }
             return true
         } else {
@@ -54,7 +56,9 @@ class AsynchronousExpectation {
     func _shouldEndNegativeWait(_ expired: Bool, _ matched: Bool, _ failureMessage: String) -> Bool {
         if expired {
             if matched {
-                XCTFail(failureMessage)
+//                XCTFail(failureMessage)
+                NSException(name: NSExceptionName.internalInconsistencyException,
+                    reason: "Subclasses must override this method", userInfo: nil).raise()
             }
             return true
         } else {

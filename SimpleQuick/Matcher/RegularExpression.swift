@@ -5,7 +5,7 @@
 //  Created by Phil Chang on 2023/7/24.
 //
 
-class RegularExpression: Matcher {
+public class RegularExpression: Matcher {
     override func failureMessage(_ actual: Any) -> String {
         return "expected \(actual) to be equal to \(expected)"
     }
@@ -24,7 +24,7 @@ class RegularExpression: Matcher {
 }
 
 extension Expectation {
-    func match(_ expected: any Equatable) {
+    public func match(_ expected: any Equatable) {
         evaluate(Equal(expected))
     }
 }

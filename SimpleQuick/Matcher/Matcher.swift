@@ -7,9 +7,9 @@
 
 import Foundation
 
-class Matcher {
+public class Matcher {
     let expected: any Equatable
-    init(_ expected: any Equatable) {
+    public init(_ expected: any Equatable) {
         self.expected = expected
     }
 

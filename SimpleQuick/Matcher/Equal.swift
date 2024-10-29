@@ -23,7 +23,7 @@ class Equal: Matcher {
 }
 
 extension Expectation {
-    func equal(_ expected: any Equatable) {
+    public func equal(_ expected: any Equatable) {
         evaluate(Equal(expected))
     }
 }

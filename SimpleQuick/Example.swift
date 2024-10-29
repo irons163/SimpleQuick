@@ -7,17 +7,17 @@
 
 var _numberOfExamplesRan = 0
 
-class Example {
+public class Example {
     var group: ExampleGroup?
     var description: String
-    var closure: () -> ()
+    var closure: (() -> ())?
 
-    init(_ description: String, _ closure: @escaping () -> ()) {
+    public init(_ description: String, _ closure: (() -> ())? = nil) {
         self.description = description
         self.closure = closure
     }
 
-    func run() {
+    public func run() {
         if _numberOfExamplesRan == 0 {
             runBeforeSpec()
         }
@@ -28,7 +28,7 @@ class Example {
             }
         }
 
-        closure()
+        closure?()
 
         if let group = self.group {
             for after in group.afters {

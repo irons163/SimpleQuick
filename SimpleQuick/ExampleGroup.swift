@@ -5,15 +5,15 @@
 //  Created by Phil Chang on 2023/7/17.
 //
 
-class ExampleGroup {
+public class ExampleGroup {
     var description: String
     var parent: ExampleGroup?
-    var localBefores: [(() -> ())] = []
+    public var localBefores: [(() -> ())] = []
     var localAfters: [(() -> ())] = []
     var groups: [ExampleGroup] = []
     var localExamples: [Example] = []
 
-    init(_ description: String) {
+    public init(_ description: String) {
         self.description = description
     }
 
@@ -37,7 +37,7 @@ class ExampleGroup {
     }
     }
 
-    var examples: [Example] {
+    public var examples: [Example] {
     get {
         var examples = localExamples
         for group in groups {
@@ -47,7 +47,7 @@ class ExampleGroup {
     }
     }
 
-    func run() {
+    public func run() {
         for example in localExamples {
             example.run()
         }
@@ -74,12 +74,12 @@ class ExampleGroup {
         }
     }
 
-    func appendExampleGroup(group: ExampleGroup) {
+    public func appendExampleGroup(group: ExampleGroup) {
         group.parent = self
         groups.append(group)
     }
 
-    func appendExample(example: Example) {
+    public func appendExample(example: Example) {
         example.group = self
         localExamples.append(example)
     }
